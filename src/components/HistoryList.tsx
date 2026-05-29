@@ -343,11 +343,11 @@ export default function HistoryList({
                   {/* Badges Overview Grid */}
                   <div className="grid grid-cols-2 gap-3 pt-2.5 border-t border-slate-100">
                     <div className="space-y-1">
-                      <div className="text-[11px] text-slate-500 font-bold uppercase tracking-wider">Higiene</div>
+                      <div className="text-xs text-slate-500 font-bold uppercase tracking-wider">Higiene</div>
                       <div>{getHygieneBadge(record.hygiene)}</div>
                     </div>
                     <div className="space-y-1">
-                      <div className="text-[11px] text-slate-500 font-bold uppercase tracking-wider">Humor / Foco</div>
+                      <div className="text-xs text-slate-500 font-bold uppercase tracking-wider">Humor / Foco</div>
                       <div>{getBehaviorBadge(record.behavior)}</div>
                     </div>
                   </div>
@@ -355,7 +355,7 @@ export default function HistoryList({
                   {/* Secondary Symptoms row */}
                   {hasSymptoms && (
                     <div className="space-y-1.5 pb-0.5" id="record-symptoms-list">
-                      <div className="text-[11px] text-slate-500 font-bold uppercase tracking-wider flex items-center gap-1">
+                      <div className="text-xs text-slate-550 text-slate-500 font-bold uppercase tracking-wider flex items-center gap-1">
                         <ShieldAlert className="w-3.5 h-3.5 text-indigo-400" />
                         Sintomas Detectados
                       </div>
@@ -376,7 +376,7 @@ export default function HistoryList({
                   {/* Interventions list row */}
                   {hasInterventions && (
                     <div className="space-y-1.5 pb-0.5" id="record-interventions-list">
-                      <div className="text-[11px] text-slate-500 font-bold uppercase tracking-wider flex items-center gap-1">
+                      <div className="text-xs text-slate-550 text-slate-500 font-bold uppercase tracking-wider flex items-center gap-1">
                         <Activity className="w-3.5 h-3.5 text-teal-405 text-sky-505 text-sky-500" />
                         Intervenções
                       </div>

@@ -318,10 +318,10 @@ export default function App() {
               </p>
               
               <div className="bg-sky-50/50 p-4 rounded-2xl border border-sky-100/50 space-y-2.5 text-slate-700">
-                <p className="font-bold text-[11px] text-sky-900 uppercase tracking-wider flex items-center gap-1.5">
+                <p className="font-bold text-xs text-sky-900 uppercase tracking-wider flex items-center gap-1.5">
                   🛡️ Segurança e Privacidade (CIA):
                 </p>
-                <ul className="list-disc pl-4 space-y-2 text-[11px] text-slate-650">
+                <ul className="list-disc pl-4 space-y-2 text-xs text-slate-650">
                   <li><strong>Confidencialidade:</strong> As informações do seu filho de saúde diária (como hálito, comportamento e intestino) são mantidas <strong>100% salvas de forma estritamente local</strong> neste navegador de internet (IndexedDB). Nenhum dado é mandado ou processado em nuvem.</li>
                   <li><strong>Integridade:</strong> Você possui controle para exportar relatórios intactos em planilhas ou de forma completa para backups seguros.</li>
                   <li><strong>Disponibilidade:</strong> Funcionamento integral em cenários sem rede/internet corporativa ou móvel.</li>
@@ -460,12 +460,12 @@ export default function App() {
             className={`flex flex-col items-center justify-center py-2 rounded-2xl transition active:scale-95 ${
               activeTab === 'registro' 
                 ? 'bg-sky-50 text-sky-600 font-bold' 
-                : 'text-slate-400 hover:text-slate-600'
+                : 'text-slate-500 hover:text-slate-700 font-bold'
             }`}
             id="nav-tab-registro"
           >
-            <span className={`text-lg ${activeTab === 'registro' ? 'scale-110' : 'opacity-80'} transition-transform`}>📝</span>
-            <span className="text-[10px] mt-0.5 tracking-tight font-bold">Check-in</span>
+            <span className={`text-xl ${activeTab === 'registro' ? 'scale-110' : 'opacity-80'} transition-transform`}>📝</span>
+            <span className="text-xs mt-1.5 tracking-tight font-extrabold">Check-in</span>
           </button>
 
           {/* TAB 2: Histórico */}
@@ -475,19 +475,19 @@ export default function App() {
             className={`flex flex-col items-center justify-center py-2 rounded-2xl transition active:scale-95 ${
               activeTab === 'historico' 
                 ? 'bg-sky-50 text-sky-600 font-bold' 
-                : 'text-slate-400 hover:text-slate-600'
+                : 'text-slate-500 hover:text-slate-700 font-bold'
             }`}
             id="nav-tab-historico"
           >
             <div className="relative">
-              <span className={`text-lg ${activeTab === 'historico' ? 'scale-110' : 'opacity-80'} transition-transform`}>🗓️</span>
+              <span className={`text-xl ${activeTab === 'historico' ? 'scale-110' : 'opacity-80'} transition-transform`}>🗓️</span>
               {records.length > 0 && (
-                <span className="absolute -top-1.5 -right-2.5 bg-emerald-500 text-white font-extrabold text-[8px] h-3.5 min-w-3.5 px-1 rounded-full flex items-center justify-center border border-white">
+                <span className="absolute -top-1.5 -right-2.5 bg-emerald-500 text-white font-extrabold text-[9px] h-4 min-w-[16px] px-1 rounded-full flex items-center justify-center border border-white">
                   {records.length}
                 </span>
               )}
             </div>
-            <span className="text-[10px] mt-0.5 tracking-tight font-bold">Histórico</span>
+            <span className="text-xs mt-1.5 tracking-tight font-extrabold">Histórico</span>
           </button>
 
           {/* TAB 3: Ajuda / Ciência */}
@@ -497,12 +497,12 @@ export default function App() {
             className={`flex flex-col items-center justify-center py-2 rounded-2xl transition active:scale-95 ${
               activeTab === 'ajuda' 
                 ? 'bg-sky-50 text-sky-600 font-bold' 
-                : 'text-slate-400 hover:text-slate-600'
+                : 'text-slate-400 hover:text-slate-600 font-bold'
             }`}
             id="nav-tab-ajuda"
           >
-            <span className={`text-lg ${activeTab === 'ajuda' ? 'scale-110' : 'opacity-80'} transition-transform`}>📚</span>
-            <span className="text-[10px] mt-0.5 tracking-tight font-bold">Saber Mais</span>
+            <span className={`text-xl ${activeTab === 'ajuda' ? 'scale-110' : 'opacity-80'} transition-transform`}>📚</span>
+            <span className="text-xs mt-1.5 tracking-tight font-extrabold">Saber Mais</span>
           </button>
         </div>
       </nav>
