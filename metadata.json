@@ -1,0 +1,6 @@
+{
+  "name": "BocaCérebro Kids",
+  "description": "Diário de acompanhamento do eixo boca-cérebro para crianças no TEA, permitindo registro de higiene, sintomas, comportamentos e intervenções com persistência via IndexedDB.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
